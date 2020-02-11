@@ -16,7 +16,7 @@ cp _sample_post $new_post
 sed -i "s/_title/${title}/g" $new_post
 
 tag_str=''
-if [ ${#tag[@]} -gt 0 ]
+if [ ${#tags[@]} -gt 0 ]
 then
     for tag in ${tags[@]}
     do
