@@ -67,6 +67,8 @@ theme_settings:
   # Post navigation
   post_navigation: false
 
+excerpt_separator:  '<!-- more -->'
+
 # PAGINATION
 paginate: 8
 paginate_path: "blog/page:num"
