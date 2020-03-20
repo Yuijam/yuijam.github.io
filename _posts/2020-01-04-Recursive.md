@@ -23,6 +23,8 @@ var myPow = function(x, n) {
 
 >  **Line 6: RangeError: Maximum call stack size exceeded** 
 
+<!-- more -->
+
 很明显，堆栈调用太深了。然后老师说要用分治来做，我写成这样就通过了：
 
 ```js
