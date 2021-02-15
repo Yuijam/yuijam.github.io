@@ -12,6 +12,8 @@ evolution）。但是他的尝试失败了，他离开了地球但是继续在�
 
 Ra是第六密度社交记忆复合体（sixth-density social memory complex），由于地球临近第三密度演化周期的终点（near the end of the third-density cycle of evolution），这意味着Ra比我们先进三个层级。
 
+<!-- more -->
+
 #### Ra有什么目的？
 
 Ra：我们曾经行走于这个星球，看过你们的脸。然而我们感觉我们有很大的责任去移除掉那些已经加诸于一的法则上的扭曲和power，我们会持续进行下去，知道你们的这个周期结束（第三密度完结吧），我们不是时间的一部分，我们可以在任一时间于你们同在。
