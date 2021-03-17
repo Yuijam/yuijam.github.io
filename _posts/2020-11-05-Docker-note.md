@@ -308,63 +308,77 @@ docker网络模型最下面的就是host network infrastructure，这里包括�
 - Set up Nodes
 
   以virtualbox作为driver创建一个名为manager的node。
-  
+
   ```
   docker-machine create --driver virtualbox manager
   ```
-  
+
   执行这个的时候报了个错：说什么VTx/AMD-v没有开启，大概是说虚拟化技术没有开启，我win10下的任务管理器的的性能页面里显示的是虚拟化技术已开启的，但是VirtualBox--->设置--->系统--->处理器--->启用嵌套VT-x/AMD-V是灰色的，这个时候去到VirtualBox的安装目录，执行
-  
+
   ```
   VBoxManage modifyvm your-vm-name --nested-hw-virt on
   ```
-  
+
   报命令找不到，但是VBoxManage这个东西又确实存在的话，可以要这样才行
-  
+
   ```
   .\VBoxManage modifyvm your-vm-name --nested-hw-virt on
   ```
-  
+
+  这样之后再打开虚拟机有可能报错：
+
+  ```
+  VMBoxManage command cannot enable nested vt-x/amd-v without nested-paging and unrestricted guest execution
+  ```
+
+  用 https://github.com/GNS3/gns3-gui/issues/3032#issuecomment-672571302 解决了。
+
+  ```
+  run this at command prompt: bcdedit /set hypervisorlaunchtype off
+  turn off windows feature "Virtual Machine Platform"
+  reboot
+  ```
+
   但是这样还是不行，卡在了waiting on ip那里。怎么折腾都不行，aws的服务器连安装貌似都挺麻烦的，最后没有办法试了下在windows装吧。
-  
+
   - 安装docker
-  
+
     virtualbox已经有了，不用安装，然后在官网找到这个链接安装docker
-  
+
     https://hub.docker.com/editions/community/docker-ce-desktop-windows/
-  
+
     装好后，可能说要装个WSL 2 Linux kernel啥的，
-  
+
     https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel
-  
+
     正常来说，docker就能运行了。
-  
+
   - 安装docker-machine
-  
+
     gitbash下：
-  
+
     ```
     base=https://github.com/docker/machine/releases/download/v0.16.0 &&
       mkdir -p "$HOME/bin" &&
       curl -L $base/docker-machine-Windows-x86_64.exe > "$HOME/bin/docker-machine.exe" &&
       chmod +x "$HOME/bin/docker-machine.exe"
     ```
-  
+
     居然很顺利就装好了。然后再次尝试创建node：
-  
+
     ```
     docker-machine create --driver virtualbox manager
     ```
-  
+
     居然，就顺利跑下去了。。。。
-  
+
   manager创建好后，再创建worker-1和worker-2
-  
+
   ```
   docker-machine create --driver virtualbox worker-1
   docker-machine create --driver virtualbox worker-2
   ```
-  
+
   `docker-machine inspect manager`能查看详细
 
 - Initialize Swarm
