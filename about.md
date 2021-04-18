@@ -15,10 +15,10 @@ Github：<https://github.com/Yuijam>
 その他：Docker、AWS、Github Actions、Nginx
 
 ####          免許・資格
-2015.12 CET-6（College English Test band 6）合格<br>
-2016.3  普通自動車第一種免許  取得<br>
-2018.7  実用日本語検定 E レベル  合格<br>
-2019.12  日本語能力試験N2　合格<br>
+2015.12 | CET-6（College English Test band 6）| 合格<br>
+2016.03 | 普通自動車第一種免許 | 取得<br>
+2018.07 | 実用日本語検定 E レベル | 合格<br>
+2019.12 | 日本語能力試験N2 | 合格<br>
 
 #### 職歴
 
@@ -44,14 +44,10 @@ Github：<https://github.com/Yuijam>
 
 #### 業務外開発
 
-- 2021.3 ~ Shoubot
-
-  Repo：https://github.com/Yuijam/shoubotgo
-
-  Golangで作ったTelegramロボットです。電車の運行状況をスカウトし、ステータスが更新されたときにTelegramからの通知を受け取ることができます。 アニメやドラマの更新もスカウトできます。
-
+- 2021.3 ~ Shoubot<br>
+  - Golangで作ったTelegramロボットです。電車の運行状況をスカウトし、ステータスが更新されたときにTelegramからの通知を受け取ることができます。アニメやドラマの更新もスカウトできます。
+  - Repo：<https://github.com/Yuijam/shoubotgo>
   ![](images/about/shoubotgoall.png)
-
   ```
     // mov command for subscribe movie update
     mov mylist  // list your own subscription list with MYLIST_ID
@@ -70,30 +66,17 @@ Github：<https://github.com/Yuijam>
   ```
 
 - 2020.12 ~ Kaeru
-
-  東京電車の運行状況に関するデータを収集するために、このプロジェクトを作った。
-
-  - Repo：https://github.com/Yuijam/kaeru
-
-  - ウェブサイト：https://kaeru.yuijam.live/
-
+  - 東京電車の運行状況に関するデータを収集するために、このプロジェクトを作った。
+  - Repo：<https://github.com/Yuijam/kaeru>
+  - Url：<https://kaeru.yuijam.live/>
   - プロジェクト構成図
-
-    ![](images/about/kaerugraph.png)
-    ![](images/about/kaeru.png)
-
-    ![](images/about/kaeruall.png)
+  ![](images/about/kaerugraph.png)
+  ![](images/about/kaeru.png)
+  ![](images/about/kaeruall.png)
 
 - 2019.12 ~ Travel
-
-  Vueを勉強するために、[qunar]( http://touch.piao.qunar.com/ )を模造した
-
-  - Repo：https://github.com/Yuijam/travel
-
-  - ウェブサイト：[Travel](https://condescending-carson-c7c441.netlify.com/#/)
-
+  - Vueを勉強するために、[qunar]( http://touch.piao.qunar.com/ )を模造した
+  - Repo：<https://github.com/Yuijam/travel>
+  - Url：<https://condescending-carson-c7c441.netlify.com/#/>
   ![](images/about/Travel.png)
-
-  
-
   ![travelall](images/about/travelall.PNG)
