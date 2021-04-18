@@ -15,12 +15,10 @@ Github：<https://github.com/Yuijam>
 その他：Docker、AWS、Github Actions、Nginx
 
 ####          免許・資格
-|  取得時間  | 免許・資格  | 結果|
-|  ---- |----|----|
-| 2015.12 | CET-6（College English Test band 6）|合格|
-|2016.3 | 普通自動車第一種免許 | 取得|
-|2018.7 | 実用日本語検定 E レベル | 合格|
-|2019.12 | 日本語能力試験N2|合格|
+2015.12 CET-6（College English Test band 6）合格
+2016.3  普通自動車第一種免許  取得
+2018.7  実用日本語検定 E レベル  合格
+2019.12  日本語能力試験N2　合格
 
 #### 職歴
 
