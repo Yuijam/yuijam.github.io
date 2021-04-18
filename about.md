@@ -57,7 +57,7 @@ feature-img: "assets/img/about.jpg"
 
   Golangで作ったTelegramロボットです。電車の運行状況をスカウトし、ステータスが更新されたときにTelegramからの通知を受け取ることができます。 アニメやドラマの更新もスカウトできます。
 
-  <img src='assets/img/shoubotgoall.png'/>
+  <img src='images/about/shoubotgoall.png'/>
 
   ```
     // mov command for subscribe movie update
