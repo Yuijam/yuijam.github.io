@@ -86,11 +86,11 @@ feature-img: "assets/img/about.jpg"
 
   - プロジェクト構成図
 
-    <img src='assets/img/kaerugraph.png'/>
+    <img src='images/about/kaerugraph.png'/>
 
-    <img src='assets/img/kaeru.png' style='zoom: 50%' />
+    <img src='images/about/kaeru.png' style='zoom: 50%' />
 
-  <img src='assets/img/kaeruall.png'/>
+  <img src='images/about/kaeruall.png'/>
 
 - 2019.12 ~ Travel
 
@@ -100,8 +100,8 @@ feature-img: "assets/img/about.jpg"
 
   - ウェブサイト：[Travel](https://condescending-carson-c7c441.netlify.com/#/)
 
-  <img src='assets/img/Travel.png' style='zoom: 50%' />
+  <img src='images/about/Travel.png' style='zoom: 50%' />
 
   
 
-  ![travelall](assets/img/travelall.PNG)
+  ![travelall](images/about/travelall.PNG)
