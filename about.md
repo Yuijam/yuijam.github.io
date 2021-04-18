@@ -4,28 +4,26 @@ title: About
 permalink: /about/
 feature-img: "assets/img/about.jpg"
 ---
-- 現住所：大阪府
-- E-mail： yuijam@live.com
-- Github：https://github.com/Yuijam 
+現住所：大阪府<br>
+E-mail： yuijam@live.com<br>
+Github：<https://github.com/Yuijam>
 
 #### スキル
-言語：TypeScript、Golang 、Lua、Haskell、Python、Linux Shell、Java、Matlab
-
-フレームワーク：React、Angular、Vue、GraphaQL、RxJs、Prism、Next.js、React-Redux、Cocos2dx-Lua
-
-データベース：MySql、MongoDB
-
+言語：TypeScript、Golang 、Lua、Haskell、Python、Linux Shell、Java、Matlab<br>
+フレームワーク：React、Angular、Vue、GraphaQL、RxJs、Prism、Next.js、React-Redux、Cocos2dx-Lua<br>
+データベース：MySql、MongoDB<br>
 その他：Docker、AWS、Github Actions、Nginx
 
 ####          免許・資格
+|  表头  | 表头  | aaa|
+|  ---- |----|----|
+|2015.12 | CET-6（College English Test band 6）| 合格|
 
-2015.12 | CET-6（College English Test band 6）| 合格
+|2016.3 | 普通自動車第一種免許 | 取得|
 
-2016.3 | 普通自動車第一種免許 | 取得
+|2018.7 | 実用日本語検定 E レベル | 合格|
 
-2018.7 | 実用日本語検定 E レベル | 合格
-
-2019.12 | 日本語能力試験N2｜合格
+|2019.12 | 日本語能力試験N2｜合格|
 
 #### 職歴
 
