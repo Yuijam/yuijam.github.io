@@ -46,6 +46,7 @@ Github：<https://github.com/Yuijam>
 
 - 2021.3 ~ Shoubot<br>
   - Golangで作ったTelegramロボットです。電車の運行状況をスカウトし、ステータスが更新されたときにTelegramからの通知を受け取ることができます。アニメやドラマの更新もスカウトできます。
+  - Url: <https://t.me/yuijambot>
   - Repo：<https://github.com/Yuijam/shoubotgo>
   ![](images/about/shoubotgoall.png)
   ```
