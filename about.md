@@ -22,7 +22,7 @@ Github：<https://github.com/Yuijam>
 
 #### 職歴
 
-- 2020.2~2021.2｜ 株式会社 ワイズネット
+- 2020.2~2021.2｜ 株式会社 ワイズネット｜正社員
   - 日経seeksプロジェクトの開発
     - 自社の業務課題を外部人材で解決するマッチングサービス 
     - React、Node、TypeScript、Docker Compose、AWS、MySql、RxJs
