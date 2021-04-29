@@ -72,7 +72,7 @@ Github：<https://github.com/Yuijam>
   - Url：<https://kaeru.yuijam.live/>
   - プロジェクト構成図
   ![](images/about/kaerugraph.png)
-  ![](images/about/Kaeru.png)
+  ![](images/about/kaeru.png)
   ![](images/about/kaeruall.png)
 
 - 2019.12 ~ Travel
