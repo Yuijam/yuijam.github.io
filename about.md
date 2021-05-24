@@ -24,23 +24,27 @@ Github：<https://github.com/Yuijam>
 
 - 2020.2~2021.2｜ 株式会社 ワイズネット｜正社員
   - 日経seeksプロジェクトの開発
+    - <https://seeks.nikkei.com>
     - 自社の業務課題を外部人材で解決するマッチングサービス 
     - React、Node、TypeScript、Docker Compose、AWS、MySql、RxJs
   - ambassadorプロジェクトの開発
-    - お店の会員システムと管理システム
+    - <https://kashiyama1927.jp>
+    - お店のiPad用受注システム、会員システムと管理システム
     - React、Node、TypeScript、Docker Compose、AWS、MySql、RxJs
-  - oysterプロジェクトの開発
-    - FXについてのサービス
+  - UHプレミアムMFXプロジェクトの開発
+    - <https://prmpc.uhmfx.jp>
+    - 最新の取引機能と充実したサポート体制を備えた、個人投資家向けの高品質FXサービス
     - Angular、Node、TypeScript、Nginx
   
 - 2018.2~2019.3｜深圳宇衡互联科技株式会社｜正社員
-  -  社内のゲームソフトフロントエンド開発（Lua、Cocos2dx-lua）
+  -  社内webフロントエンドとバックエンド開発
+  -  React、Node、TypeScript、Angular、Nginx、MySql、Linux Shell、Docker
 - 2017.7~2018.1｜深圳市希瑞電子商務株式会社｜正社員
-  - 社内のゲームバックエンドフレームワークの開発（Lua、Shell Script）
-  - 社内のゲームフロントエンドの開発（Cocos2dx-lua）
+  - 社内webフロントエンドとバックエンド開発
+  - React、Node、TypeScript、Nginx、MySql、Linux Shell
 - 2017.2~2017.4 ｜ 深圳市希瑞電子商務株式会社｜実習生
-  - 第一ヶ月の勉強：Lua、Git、社内のバックエンドフレームワークの使用、社内のゲームエンジンの使用
-  - 第二ヶ月の仕事：バックエンドのモジュールを開発及びテスト、フレームワークのバグを修正
+  - 一部のモジュールを開発及びテスト
+  - React、Node、TypeScript
 
 #### 業務外開発
 
