@@ -4,7 +4,7 @@ title: Test hellow
 tags: [sometaga, aege]
 ---
 
-![[异域动漫发布]24[00_00_49][20130913-163608-0].JPG](/images/Test hellow/[异域动漫发布]24[00_00_49][20130913-163608-0].webp)
+![](/images/Test hellow/[异域动漫发布]24[00_00_49][20130913-163608-0].webp)
 
 say something~~~~
 
