@@ -14,7 +14,7 @@ void main() {
   const cvar = 'helloworld';
 }
 ```
-
+<!-- more -->
 看起来没什么区别，但是在编译器看起来，有很大的不同，const是baked into the code，他们不会在运行时被计算。final是在运行时赋值，而const是在编译时赋值。
 
 在flutter中，比如像创建一个Padding(prop: somevalue)之类的对象，你可能到处会用到同样的对象，这个时候Padding(prop: const somevalue)，加上const，这个实例就能被reuse，这叫做所谓的canonical instance。

@@ -47,15 +47,15 @@ Dockerfile（Build）---->Docker Image（ship）---->Containers（Run）
 
 - Docker Host：实际执行容器化任务的机器。跑了一个叫Docker daemon的程序，用来监听并执行Docker client的请求。Docker daemon构建dockerfile并将其转成docker image。dockerfile和docker image可以直接和docker daemon交流。当然docker image也可以由从docker hub push或者pull过来。反正就是说，任务可以被docker host通过docker daemon执行。image也可以作为容器运行，容器可以和docker daemon通过image交流。也就是说，对容器所做的任何更改也会暂时反映在docker映像上。
 
-  ![](/Users/yuijam/Documents/yuijam.github.io/images/Docker-note/image-20201107145042787.webp)
+  ![](/images/Docker-note/image-20201107145042787.webp)
 
-- Docker Registry：Docker client和Docker host实际上是同一台机器，但是docker client是作为一个被限制于用来传递用户输入并展示docker host的输出的软件。你会发现Docker Registry是docker架构中最简单的一个组件，用来存储docker image并让其对他人开放。![](/Users/yuijam/Documents/yuijam.github.io/images/Docker-note/image-20201107145836256.webp)
+- Docker Registry：Docker client和Docker host实际上是同一台机器，但是docker client是作为一个被限制于用来传递用户输入并展示docker host的输出的软件。你会发现Docker Registry是docker架构中最简单的一个组件，用来存储docker image并让其对他人开放。![](/images/Docker-note/image-20201107145836256.webp)
 
 #### Write Dockerfile
 
 dockerfile没有什么特殊的后缀名，通常的规则是将文件命名为`Dockerfile`。通常分为如下图三个部分
 
-![](/Users/yuijam/Documents/yuijam.github.io/images/Docker-note/image-20201107150422254.webp)
+![](/images/Docker-note/image-20201107150422254.webp)
 
 #### Fundamental Instructions
 
@@ -134,7 +134,7 @@ EXPOSE用来告诉Docker该容器的哪个端口被监听了。然后通过`dock
 
 - 再上面是Base Image Layer。it will follow the file mapping laid out by boot file system.
 
-![](/Users/yuijam/Documents/yuijam.github.io/images/Docker-note/image-20201107175611795.webp)
+![](/images/Docker-note/image-20201107175611795.webp)
 
 #### Docker hub
 
@@ -222,7 +222,7 @@ docker网络模型最下面的就是host network infrastructure，这里包括�
 
 再网上就是在运行的容器了，这些容器都至少有一个end point，说到端点，它们是虚拟以太网的容器侧连接器表示，这是跨docker进行联网的通用协议（speaking of end point, they are container side connector representation of virtual ethernet which is the common protocol for networking across docker）。他们有像ip地址，虚拟物理地址，以及端口这样的东西。
 
-![](/Users/yuijam/Documents/yuijam.github.io/images/Docker-note/image-20201108213627340.webp)
+![](/images/Docker-note/image-20201108213627340.webp)
 
 如果一个容器连接了不止一个网络，那么他就会有不止一个相关的有着不同ip的endpoint。在单主机实现的情况下，ip的范围（scope）通常被限制在主机。
 
@@ -230,7 +230,7 @@ docker网络模型最下面的就是host network infrastructure，这里包括�
 
 #### Docker Native Network Drivers
 
-![](/Users/yuijam/Documents/yuijam.github.io/images/Docker-note/image-20201108213731800.webp)
+![](/images/Docker-note/image-20201108213731800.webp)
 
 这是上面的一张图收缩后的样子，这一块内容有不太理解的地方，记录一下结论：多个容器的时候，容器连接网络是通过容器endpoint连接到一个虚拟bridge的，然后这个bridge连接了Host网络。这意味着容器是和Host网络规范隔离的。容器会有不同的ip和host，我们可以定义bridge的ip范围，子网掩码。如果我们不设置这些的话，IPAM drivers会帮我做这些。
 
@@ -243,7 +243,7 @@ docker网络模型最下面的就是host network infrastructure，这里包括�
 
 数据包头将包含host和容器两者的源和目的地数据。
 
-![](/Users/yuijam/Documents/yuijam.github.io/images/Docker-note/image-20201110221456969.webp)
+![](/images/Docker-note/image-20201110221456969.webp)
 
 #### Working with docker network
 
@@ -257,9 +257,9 @@ docker网络模型最下面的就是host network infrastructure，这里包括�
 
 如果将多个容器放一个host的话，那么如果host挂了，那全挂了，那就搞多个host，然后多个人管理不同的host，这样首先很不经济，雇这么多人做同一个件事，其次，要保持每个host的同步是个问题。所以最想要的是，希望能一个人通过一个instance同时管理所有的host。
 
-![](/Users/yuijam/Documents/yuijam.github.io/images/Docker-note/image-20201114184936768.webp)
+![](/images/Docker-note/image-20201114184936768.webp)
 
-![](/Users/yuijam/Documents/yuijam.github.io/images/Docker-note/image-20201114185156391.webp)
+![](/images/Docker-note/image-20201114185156391.webp)
 
 如果一个worker挂了，那麽他的任务会被分配给其他worker，如果后来那个worker又恢复了，那么之前分配出去的任务会再还给他。
 
