@@ -12,11 +12,11 @@ tags: [computer-networking]
 
 <!-- more -->
 
-![](/images/Computer-Networking/image-20210214124410416.webp)
+![](/Users/yuijam/Documents/yuijam.github.io/images/Computer-Networking/image-20210214124410416.webp)
 
 要注意的是，**中间的路由器只有三层协议**。
 
-![](/images/Computer-Networking/image-20210214132323795.webp)
+![](/Users/yuijam/Documents/yuijam.github.io/images/Computer-Networking/image-20210214132323795.webp)
 
 **TCP报文段**：含有**源端口**和**目的端口**，这些端口号是用来表示应用进程的。还含有**序号**和**确认号**，用于重传机制的，以确保可靠传输。
 
@@ -81,7 +81,7 @@ ip地址是互联网上各主机使用的地址，标识两部分信息：
 
 #### 数据包转发过程
 
-![](/images/Computer-Networking/image-20210214203511416.webp)
+![](/Users/yuijam/Documents/yuijam.github.io/images/Computer-Networking/image-20210214203511416.webp)
 
 - H1---->R1
   - 主机H1判断目的ip地址IP2与源ip地址IP1不在同一个网络，H1决定将数据包发送给H1所在网络的默认路由R1，并找到其IP地址为IP3。默认路由器，也常称为默认网关。
@@ -104,7 +104,7 @@ ip地址是互联网上各主机使用的地址，标识两部分信息：
 
 要通过地址解析协议，也就是ARP协议。
 
-![](/images/Computer-Networking/image-20210214205300344.webp)
+![](/Users/yuijam/Documents/yuijam.github.io/images/Computer-Networking/image-20210214205300344.webp)
 
 当c要给a发数据时，他知道a的ip地址，如果不知道对方的mac地址，那么在数据链路层封包的时候就无法填写。c的ARP进程将在自身的ARP高速缓存中查找是否存在a的ip地址对应mac地址的数据条目。如果找不到，ARP进程将构建并发送广播一个ARP请求，请求内容为自身的ip地址和mac地址，以及要查找的ip地址。
 
@@ -124,7 +124,7 @@ ARP不能跨网络使用，只能在一个网络内部使用。
 
 交换机连接的以太网，从屋里拓扑上看，他与使用集线器的网络并没有什么不同，但是在**逻辑上不是共享总线**。主机1给主机2发送单播帧时，帧进入交换机后，会将该帧转发给目的主机，而不是所有主机，显然交换机具有明显的优势。
 
-![](/images/Computer-Networking/image-20210215154027505.webp)
+![](/Users/yuijam/Documents/yuijam.github.io/images/Computer-Networking/image-20210215154027505.webp)
 
 交换机通常有多个接口，每个接口都与一台主机或者另一个以太网的交换机相连。一般都工作在**全双工方式**，也就是收发帧可以同时进行。但是集线器的，逻辑上共享总线，使用CSMA/CD协议，只能工作在**半双工方式**。
 
@@ -144,7 +144,7 @@ ARP不能跨网络使用，只能在一个网络内部使用。
 
 #### 分类地址
 
-![](/images/Computer-Networking/image-20210215172449611.webp)
+![](/Users/yuijam/Documents/yuijam.github.io/images/Computer-Networking/image-20210215172449611.webp)
 
 分类地址abc都有网络号和主机号组成。分类地址有如下缺点：
 
@@ -172,13 +172,13 @@ ARP不能跨网络使用，只能在一个网络内部使用。
 
 **将子网掩码与ip地址相与就得到了子网地址。**
 
-![](/images/Computer-Networking/image-20210215174609815.webp)
+![](/Users/yuijam/Documents/yuijam.github.io/images/Computer-Networking/image-20210215174609815.webp)
 
 那c类网来说，当最后为0时，相当于没有划分子网。如果最后为128，也就是10000000，那么就有2个子网（0，1），对于每个子网，总共有7位可分配，所以**总共有2的7次方个号码**，然后去掉全0和全1，剩下就是2的7次方-2个可分配的主机数。**因为全0为子网地址，全1为广播地址**。
 
 为什么255.255.255.254（254= 11111110 ）不能作为子网地址呢？因为这样的话可分配的就剩最后一位，要不是0要不是1，0为子网地址，1为广播地址，那就没有可分配的地址了。
 
-![](/images/Computer-Networking/image-20210215181130372.webp)
+![](/Users/yuijam/Documents/yuijam.github.io/images/Computer-Networking/image-20210215181130372.webp)
 
 由于B类地址很快分配了一半，以及主干路由表急剧增长，所以有了构造超网。
 
@@ -188,4 +188,4 @@ ARP不能跨网络使用，只能在一个网络内部使用。
 
 CIDR使用斜线记法，在斜线后面写上网络前缀所占的比特数量。比如128.21.22.3/20表示网络前缀占20比特，主机编号占用32-20=12位。
 
-![](/images/Computer-Networking/image-20210215185345853.webp)
+![](/Users/yuijam/Documents/yuijam.github.io/images/Computer-Networking/image-20210215185345853.webp)
